@@ -27,73 +27,73 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="bg-[url(img/hero.webp)]">
-        <div>
-            <h2>Todo lo que un boxeador necesita</h2>
-            <p>Compra los mejores productos para entrenar y competir al máximo nivel.</p>
-            <a href="#tienda">Ver productos</a>
+    <section id="home" class="h-screen bg-[url(img/hero.webp)] bg-cover flex justify-center items-center text-white" >
+        <div class="text-center">
+            <h2 class="font-bold text-4xl">Todo lo que un boxeador necesita</h2>
+            <p>Compra los mejores productos para entrenar y competir al máximo nivel.</p><br>
+            <a href="#tienda" class="rounded bg-red-500 p-2">Ver productos</a>
         </div>
     </section>
 
     <!-- Sección de Tienda -->
-    <section id="tienda">
-        <h2>Nuestros Productos</h2>
-        <div>
+    <section id="tienda" class="bg-slate-100">
+        <h2 class="flex text-center h-48 text-3xl font-bold justify-center items-center">Nuestros Productos</h2>
+        <div class="grid">
             <!-- Producto 1 -->
-            <div>
-                <img src="img/guantes.webp" alt="Guantes de boxeo">
-                <h3>Guantes de Boxeo</h3>
-                <p>Guantes de alta calidad para entrenamientos y competiciones.</p>
-                <p>$50.00</p>
-                <button>Añadir al carrito</button>
+            <div class="m-8 mb-2 rounded bg-white rounded p-4">
+                <div class="bg-[url(img/guantes.webp)] h-56 bg-center" ></div>
+                <h3 class="font-bold m-2">Guantes de Boxeo</h3>
+                <p class="text-gray-400 m-2">Guantes de alta calidad para entrenamientos y competiciones.</p>
+                <p class="font-bold m-2">$50.00</p>
+                <button class="bg-red-500 text-white text-center rounded p-2">Añadir al carrito</button>
             </div>
             <!-- Producto 2 -->
-            <div>
-                <img src="img/hero.webp" alt="Ropa de boxeo">
-                <h3>Ropa Deportiva</h3>
-                <p>Ropa ligera y resistente, diseñada especialmente para boxeadores.</p>
-                <p>$30.00</p>
-                <button>Añadir al carrito</button>
+            <div class="m-8 mb-2 rounded bg-white  rounded  p-4">
+                <div class="bg-[url(img/guantes.webp)] h-56 bg-center" ></div>
+                <h3 class="font-bold m-2">Ropa Deportiva</h3>
+                <p class="text-gray-400 m-2">Ropa ligera y resistente, diseñada especialmente para boxeadores.</p>
+                <p class="font-bold m-2">$30.00</p>
+                <button class="bg-red-500 text-white text-center rounded p-2">Añadir al carrito</button>
             </div>
             <!-- Producto 3 -->
-            <div>
-                <img src="ruta_de_la_imagen_protector.png" alt="Protector bucal">
-                <h3>Protector Bucal</h3>
-                <p>Protección dental de alta resistencia para tu seguridad en el ring.</p>
-                <p>$15.00</p>
-                <button>Añadir al carrito</button>
+            <div class="m-8 mb-2 rounded bg-white  rounded  p-4">
+                <div class="bg-[url(img/guantes.webp)] h-56 bg-center" ></div>
+                <h3 class="font-bold m-2">Protector Bucal</h3>
+                <p class="text-gray-400 m-2">Protección dental de alta resistencia para tu seguridad en el ring.</p>
+                <p class="font-bold m-2">$15.00</p>
+                <button class="bg-red-500 text-white text-center rounded p-2">Añadir al carrito</button>
             </div>
         </div>
     </section>
 
     <!-- Sección de Información -->
-    <section id="info">
+    <section id="info" class="grid bg-slate-200 text-center pb-12">
         <div>
-            <h2>¿Por qué elegir nuestros productos?</h2>
+            <h2 class="p-12 text-3xl font-bold">¿Por qué elegir nuestros productos?</h2>
             <div>
-                <div>
-                    <h3>Calidad Garantizada</h3>
-                    <p>Nuestros productos están fabricados con los mejores materiales, ofreciendo durabilidad y confort.</p>
+                <div class="mx-4">
+                    <h3 class="text-red-500 font-bold text-xl">Calidad Garantizada</h3>
+                    <p class="text-gray-600">Nuestros productos están fabricados con los mejores materiales, ofreciendo durabilidad y confort.</p>
                 </div>
-                <div>
-                    <h3>Experiencia Profesional</h3>
-                    <p>Llevamos años trabajando con los mejores boxeadores para ofrecer productos que realmente marcan la diferencia.</p>
+                <div class="mx-6">
+                    <h3 class="text-red-500 font-bold text-xl pt-12">Experiencia Profesional</h3>
+                    <p class="text-gray-600">Llevamos años trabajando con los mejores boxeadores para ofrecer productos que realmente marcan la diferencia.</p>
                 </div>
-                <div>
-                    <h3>Envío Rápido</h3>
-                    <p>Disfruta de nuestro servicio de entrega rápida, para que puedas tener tus productos cuando más los necesitas.</p>
+                <div class="mx-5">
+                    <h3 class="text-red-500 font-bold text-xl pt-12">Envío Rápido</h3>
+                    <p class="text-gray-600">Disfruta de nuestro servicio de entrega rápida, para que puedas tener tus productos cuando más los necesitas.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Sección de Contacto -->
-    <section id="contacto">
-        <h2>Contáctanos</h2>
-        <form>
+    <section id="contacto" class="text-center bg-slate-100">
+        <h2 class="pt-8 font-bold text-3xl">Contáctanos</h2>
+        <form class="m-12 bg-white p-14">
             <div>
                 <label for="name">Nombre</label>
-                <input type="text" id="name" placeholder="Tu nombre">
+                <input class="border" type="text" id="name" placeholder="Tu nombre">
             </div>
             <div>
                 <label for="email">Email</label>
@@ -108,7 +108,7 @@
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer >
         <div>
             <p>&copy; 2024 Tienda Boxeadores. Todos los derechos reservados.</p>
         </div>
