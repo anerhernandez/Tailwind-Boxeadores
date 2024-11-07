@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tienda online de productos para boxeadores. Encuentra guantes, ropa, protectores y más.">
+    <meta name="description"
+        content="Tienda online de productos para boxeadores. Encuentra guantes, ropa, protectores y más.">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Tienda Boxeadores</title>
 </head>
@@ -13,10 +14,10 @@
 
     <!-- Header -->
     <header>
-        <div class="grid grid-cols-2 p-3 text-white bg-red-500 font-bold">
-            <h1>Tienda Boxeadores</h1>
+        <div class="flex items-center justify-around py-3 text-white bg-red-500 font-bold text-xs md:text-sm lg:text-base xl:text-xl 2xl:text-2xl">
+            <h1 class="text-lg md:text-xl lg:text-2xl 2xl:text-3xl">Tienda Boxeadores</h1>
             <nav>
-                <ul class="grid grid-cols-4 text-center text-xs">
+                <ul class="justify-center grid md:grid-cols-4 text-center ">
                     <li><a href="#home">Inicio</a></li>
                     <li><a href="#tienda">Tienda</a></li>
                     <li><a href="#info">Información</a></li>
@@ -27,37 +28,37 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="h-screen bg-[url(img/hero.webp)] bg-cover flex justify-center items-center text-white" >
+    <section id="home" class="h-screen bg-[url(img/hero.webp)] lg:bg-cover bg-center flex justify-center items-center text-white md:text-sm lg:text-base xl:text-xl 2xl:text-3xl">
         <div class="text-center">
-            <h2 class="font-bold text-4xl">Todo lo que un boxeador necesita</h2>
+            <h2 class="font-bold text-4xl xl:text-5xl 2xl:text-6xl">Todo lo que un boxeador necesita</h2>
             <p>Compra los mejores productos para entrenar y competir al máximo nivel.</p><br>
-            <a href="#tienda" class="rounded bg-red-500 p-2">Ver productos</a>
+            <a href="#tienda" class="rounded bg-red-500 p-2 2xl:p-4">Ver productos</a>
         </div>
     </section>
 
     <!-- Sección de Tienda -->
     <section id="tienda" class="bg-slate-100">
         <h2 class="flex text-center h-48 text-3xl font-bold justify-center items-center">Nuestros Productos</h2>
-        <div class="grid">
+        <div class="grid lg:grid-cols-3 pb-9">
             <!-- Producto 1 -->
-            <div class="m-8 mb-2 rounded bg-white rounded p-4">
-                <div class="bg-[url(img/guantes.webp)] h-56 bg-center" ></div>
+            <div class="m-8 mb-2 rounded bg-white rounded p-4 shadow-2xl">
+                <div class="bg-[url(img/guantes.webp)] h-56 bg-center md:bg-cover shadow-lg"></div>
                 <h3 class="font-bold m-2">Guantes de Boxeo</h3>
                 <p class="text-gray-400 m-2">Guantes de alta calidad para entrenamientos y competiciones.</p>
                 <p class="font-bold m-2">$50.00</p>
                 <button class="bg-red-500 text-white text-center rounded p-2">Añadir al carrito</button>
             </div>
             <!-- Producto 2 -->
-            <div class="m-8 mb-2 rounded bg-white  rounded  p-4">
-                <div class="bg-[url(img/guantes.webp)] h-56 bg-center" ></div>
+            <div class="m-8 mb-2 rounded bg-white rounded p-4 shadow-2xl">
+                <div class="bg-[url(img/guantes.webp)] h-56 bg-center md:bg-cover shadow-lg"></div>
                 <h3 class="font-bold m-2">Ropa Deportiva</h3>
                 <p class="text-gray-400 m-2">Ropa ligera y resistente, diseñada especialmente para boxeadores.</p>
                 <p class="font-bold m-2">$30.00</p>
                 <button class="bg-red-500 text-white text-center rounded p-2">Añadir al carrito</button>
             </div>
             <!-- Producto 3 -->
-            <div class="m-8 mb-2 rounded bg-white  rounded  p-4">
-                <div class="bg-[url(img/guantes.webp)] h-56 bg-center" ></div>
+            <div class="m-8 mb-2 rounded bg-white rounded p-4 shadow-2xl">
+                <div class="bg-[url(img/guantes.webp)] h-56 bg-center md:bg-cover shadow-lg"></div>
                 <h3 class="font-bold m-2">Protector Bucal</h3>
                 <p class="text-gray-400 m-2">Protección dental de alta resistencia para tu seguridad en el ring.</p>
                 <p class="font-bold m-2">$15.00</p>
@@ -67,48 +68,53 @@
     </section>
 
     <!-- Sección de Información -->
-    <section id="info" class="grid bg-slate-200 text-center pb-12">
+    <section id="info" class="bg-slate-200 text-center pb-12">
         <div>
             <h2 class="p-12 text-3xl font-bold">¿Por qué elegir nuestros productos?</h2>
-            <div>
+            <div class="grid lg:grid-cols-3">
                 <div class="mx-4">
                     <h3 class="text-red-500 font-bold text-xl">Calidad Garantizada</h3>
-                    <p class="text-gray-600">Nuestros productos están fabricados con los mejores materiales, ofreciendo durabilidad y confort.</p>
+                    <p class="text-gray-600">Nuestros productos están fabricados con los mejores materiales, ofreciendo
+                        durabilidad y confort.</p>
                 </div>
                 <div class="mx-6">
-                    <h3 class="text-red-500 font-bold text-xl pt-12">Experiencia Profesional</h3>
-                    <p class="text-gray-600">Llevamos años trabajando con los mejores boxeadores para ofrecer productos que realmente marcan la diferencia.</p>
+                    <h3 class="text-red-500 font-bold text-xl">Experiencia Profesional</h3>
+                    <p class="text-gray-600">Llevamos años trabajando con los mejores boxeadores para ofrecer productos
+                        que realmente marcan la diferencia.</p>
                 </div>
                 <div class="mx-5">
-                    <h3 class="text-red-500 font-bold text-xl pt-12">Envío Rápido</h3>
-                    <p class="text-gray-600">Disfruta de nuestro servicio de entrega rápida, para que puedas tener tus productos cuando más los necesitas.</p>
+                    <h3 class="text-red-500 font-bold text-xl">Envío Rápido</h3>
+                    <p class="text-gray-600">Disfruta de nuestro servicio de entrega rápida, para que puedas tener tus
+                        productos cuando más los necesitas.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Sección de Contacto -->
-    <section id="contacto" class="text-center bg-slate-100">
+    <section id="contacto" class="text-center bg-slate-100 ">
         <h2 class="pt-8 font-bold text-3xl">Contáctanos</h2>
-        <form class="m-12 bg-white p-14">
-            <div>
-                <label for="name">Nombre</label>
-                <input class="border" type="text" id="name" placeholder="Tu nombre">
-            </div>
-            <div>
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Tu email">
-            </div>
-            <div>
-                <label for="message">Mensaje</label>
-                <textarea id="message" rows="5" placeholder="Tu mensaje"></textarea>
-            </div>
-            <button type="submit">Enviar</button>
-        </form>
+        <div class="flex justify-center items-center">
+            <form class="grid m-12 bg-white py-9 px-8 md:w-2/6 shadow-2xl" >
+                <div class="grid">
+                    <label class="font-bold text-left" for="name">Nombre</label>
+                    <input class="border p-2" type="text" id="name" placeholder="Tu nombre">
+                </div>
+                <div class="grid mt-4">
+                    <label class="font-bold text-left" for="email">Email</label>
+                    <input class="border p-2" type="email" id="email" placeholder="Tu email">
+                </div>
+                <div class="grid mt-4">
+                    <label class="font-bold text-left" for="message">Mensaje</label>
+                    <textarea class="border" id="message" rows="5" placeholder="Tu mensaje"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
     </section>
 
     <!-- Footer -->
-    <footer >
+    <footer class="text-center bg-red-600 text-white py-4">
         <div>
             <p>&copy; 2024 Tienda Boxeadores. Todos los derechos reservados.</p>
         </div>
